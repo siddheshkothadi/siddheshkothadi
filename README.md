@@ -1,4 +1,8 @@
-### Hi there 👋
+## Hi there 👋
+
+#### - 🔭 I’m currently working on Notes web-app
+#### - 🌱 I’m currently learning React.js
+#### - 📫 How to reach me: <a href='https://twitter.com/siddhesh_kt'>Twitter</a> <a href='https://www.linkedin.com/in/siddhesh-kothadi-a25362191/'>Linkedin</a>
 
 <!--
 **siddheshkothadi/siddheshkothadi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
