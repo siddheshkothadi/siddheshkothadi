@@ -1,7 +1,5 @@
 ## Hi there 👋 I'm Siddhesh
 
-#### - 🔭 I’m currently working on Notes web-app
-#### - 🌱 I’m currently learning React.js
 #### - 📫 How to reach me: <a href='https://twitter.com/siddhesh_kt'>Twitter</a> <a href='https://www.linkedin.com/in/siddhesh-kothadi-a25362191/'>LinkedIn</a>
 
 <!--
