@@ -1,11 +1,9 @@
-## Hi there 👋 I'm Siddhesh
-
-- 📫 How to reach me: <a href='https://twitter.com/siddhesh_kt'>Twitter</a> <a href='https://www.linkedin.com/in/siddhesh-kothadi-a25362191/'>LinkedIn</a>
+# Hi there 👋 I'm Siddhesh
 
 [![Siddhesh's github stats](https://github-readme-stats.vercel.app/api?username=siddheshkothadi)](https://github.com/siddheshkothadi/github-readme-stats)
-
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=siddheshkothadi&layout=compact)](https://github.com/siddheshkothadi/github-readme-stats)
 
+<a href="https://twitter.com/siddhesh_kt"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"/></a> <a href='https://www.linkedin.com/in/siddhesh-kothadi-a25362191/'><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <!--
 **siddheshkothadi/siddheshkothadi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
