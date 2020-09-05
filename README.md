@@ -1,6 +1,7 @@
 ## Hi there 👋 I'm Siddhesh
 
 - 📫 How to reach me: <a href='https://twitter.com/siddhesh_kt'>Twitter</a> <a href='https://www.linkedin.com/in/siddhesh-kothadi-a25362191/'>LinkedIn</a>
+
 [![Siddhesh's github stats](https://github-readme-stats.vercel.app/api?username=siddheshkothadi)](https://github.com/siddheshkothadi/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=siddheshkothadi&layout=compact)](https://github.com/siddheshkothadi/github-readme-stats)
