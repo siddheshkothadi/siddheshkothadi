@@ -1,4 +1,4 @@
-# Hi there 👋 I'm Siddhesh
+# Hi, I'm Siddhesh
 
 ![Siddhesh's github stats](https://github-readme-stats.vercel.app/api?username=siddheshkothadi&count_private=true&hide=issues&show_icons=true)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=siddheshkothadi&layout=compact)](https://github.com/siddheshkothadi/github-readme-stats)
