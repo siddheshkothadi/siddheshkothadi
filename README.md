@@ -1,4 +1,6 @@
-# Hi, I'm Siddhesh <img src="https://shop.strato.de/WebRoot/Store12/Shops/62924100/4EB4/02D4/3526/1401/13E6/C0A8/29BA/7CE4/android-waving-decal.jpg" width="100"/>
+# Hi, I'm Siddhesh <img src="https://lh3.googleusercontent.com/proxy/aVdQw6i9npDO_XXNoK15Jq0hcaOrXQSfYab8CfuP1CmLDoY70nRn3S4xRI5xFBzSGUg-g6I_S4vA5zatETqK7G0eX-DBsRT1xUczzLDHp-tr1Yne2w" width="100"/>
+
+<!-- https://shop.strato.de/WebRoot/Store12/Shops/62924100/4EB4/02D4/3526/1401/13E6/C0A8/29BA/7CE4/android-waving-decal.jpg -->
 
 ![Siddhesh's github stats](https://github-readme-stats.vercel.app/api?username=siddheshkothadi&count_private=true&hide=issues&show_icons=true&theme=radical)
 
