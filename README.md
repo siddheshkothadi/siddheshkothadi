@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="https://pngimg.com/uploads/android_logo/android_logo_PNG12.png" width="100" align="center"/>
-  <h1 align="center"> Hi, I'm Siddhesh </h1>
-</p>
+# Hi, I'm Siddhesh<img src="https://pngimg.com/uploads/android_logo/android_logo_PNG12.png" width="100" align="center"/>
 
 <!-- https://shop.strato.de/WebRoot/Store12/Shops/62924100/4EB4/02D4/3526/1401/13E6/C0A8/29BA/7CE4/android-waving-decal.jpg -->
 
