@@ -1,4 +1,4 @@
-# Hi, I'm Siddhesh <img src="https://pngimg.com/uploads/android_logo/android_logo_PNG12.png" width="50" align="center"/>
+# Hi, I'm Siddhesh <img src="https://www.pngkey.com/png/full/75-758696_transparent-library-robot-winner-png-stickpng-android-hello.png" width="70" align="center"/>
 
 <!-- https://www.pngkey.com/png/full/75-758696_transparent-library-robot-winner-png-stickpng-android-hello.png -->
 <!-- https://pngimg.com/uploads/android_logo/android_logo_PNG12.png -->
