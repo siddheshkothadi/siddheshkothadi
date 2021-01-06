@@ -1,4 +1,4 @@
-# Hi, I'm Siddhesh <img src="https://lh3.googleusercontent.com/proxy/ZdrcDDaM8FjFw4d8LB3vEQ-5BKl2eIekRKCgMky_V67rUYlsTGAS1Ia15t8cQO9xyXAnQxpMIu0-a0Klb2MNV7TWWpQiLHiZ1np95nhc_7-GDNbSxCs" width="100"/>
+# Hi, I'm Siddhesh <img src="https://pngimg.com/uploads/android_logo/android_logo_PNG12.png" width="100"/>
 
 <!-- https://shop.strato.de/WebRoot/Store12/Shops/62924100/4EB4/02D4/3526/1401/13E6/C0A8/29BA/7CE4/android-waving-decal.jpg -->
 
