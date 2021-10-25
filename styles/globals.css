@@ -1,0 +1,458 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+
+  --pink: #ff4088;
+  --orange: #fa8142;
+
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --shadow-inset: 3px 3px 3px #f8f8f8 inset, -3px -3px 3px #d0d0d0 inset;
+  --outer-shadow-half: 1.5px 1.5px 1.5px #d0d0d0, -1.5px -1.5px 1.5px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  --inner-shadow-half: inset 1.5px 1.5px 1.5px #d0d0d0,
+    inset -1.5px -1.5px 1.5px #f8f8f8;
+  --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+
+  --dark-outer-shadow: 3px 3px 3px #1c1d26, -3px -3px 3px #343746;
+  --dark-inset: 3px 3px 3px #343746 inset, -3px -3px 3px #1c1d26 inset;
+  --dark-outer-shadow-half: 1.5px 1.5px 1.5px #1c1d26,
+    -1.5px -1.5px 1.5px #343746;
+  --dark-outer-shadow-0: 0 0 0 #1c1d26, 0 0 0 #343746;
+
+  --dark-inner-shadow: inset 3px 3px 3px #1c1d26, inset -3px -3px 3px #343746;
+  --dark-inner-shadow-half: inset 1.5px 1.5px 1.5px #1c1d26,
+    inset -1.5px -1.5px 1.5px #343746;
+  --dark-inner-shadow-0: inset 0 0 0 #1c1d26, inset 0 0 0 #343746;
+
+  --bottom-shadow: 0 6px 4px -4px #d0d0d0;
+  --bottom-shadow-dark: 0 6px 4px -4px #1c1d26;
+
+  --androidGreen: "#3ddc84";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+strong {
+  font-weight: 600;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-inviewport="slide-in-right"] {
+  transition: 0.6s;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+[data-inviewport="slide-in-right"].is-inViewport {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-inviewport="slide-in-left"] {
+  transition: 0.6s;
+  opacity: 0;
+  transform: translateX(100%);
+}
+[data-inviewport="slide-in-left"].is-inViewport {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+[data-inviewport="zoom-in"] {
+  transition: 0.6s;
+  opacity: 0;
+  transform: scale(0.2);
+}
+
+[data-inviewport="zoom-in"].is-inViewport {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@layer utilities {
+  .downTransition {
+    animation: up-down 1.2s infinite;
+  }
+
+  .navNameTransition {
+    animation: slide-in-from-left 0.5s;
+  }
+
+  .noTapHighlight {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  .textInputIconSection {
+    border: 1px solid #d0d0d0;
+  }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    @apply text-textHeadBlack bg-androidGreen;
+  }
+
+  ::selection {
+    @apply text-textHeadBlack bg-androidGreen;
+  }
+
+  .bottomShadow {
+    box-shadow: var(--bottom-shadow);
+  }
+
+  .introContainer {
+    @apply flex flex-col-reverse justify-center md:flex-row md:justify-around  items-center p-6 md:w-10/12;
+    height: 100vh;
+    overflow: visible;
+  }
+
+  .introContainerLeft {
+    @apply text-center py-5 md:w-1/2 md:text-left;
+  }
+
+  .introContainerRight {
+    @apply md:w-1/2 flex justify-center;
+  }
+
+  .innerShadowCircle {
+    @apply rounded-full bg-lightBackground;
+    box-shadow: var(--inner-shadow);
+  }
+
+  .outerShadowCircle {
+    @apply rounded-full bg-lightBackground;
+    box-shadow: var(--outer-shadow);
+  }
+
+  .insetShadow {
+    @apply rounded-2xl flex items-center justify-center px-5 py-3 whitespace-nowrap text-xs md:text-sm font-medium;
+    box-shadow: var(--shadow-inset);
+    -webkit-tap-highlight-color: transparent;
+    cursor: default;
+  }
+
+  .nameGradient {
+    @apply text-textHeadBlack dark:text-white text-xl md:text-2xl;
+    background-image: linear-gradient(90deg, var(--orange), var(--pink));
+    padding: 0 4px;
+    border-radius: 3px;
+    /* font-size: 0.85em; */
+    font-weight: 700;
+  }
+
+  .toggleThemeBtn {
+    @apply m-auto rounded-full p-3 lg:p-4 bg-lightBackground flex items-center justify-center text-textHeadBlack dark:text-drForeGround;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: var(--outer-shadow);
+    animation: releaseShadow 0.2s;
+  }
+
+  .aboutCard {
+    @apply rounded-md p-3 lg:p-4 bg-lightBackground flex items-center justify-center text-textHeadBlack dark:text-drForeGround;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: var(--outer-shadow);
+  }
+
+  .projectCard {
+    @apply rounded-xl p-3 lg:p-4 bg-lightBackground flex flex-col justify-evenly w-full md:max-w-xs lg:max-w-sm xl:max-w-lg 2xl:max-w-xl mb-6 space-y-6 md:m-2;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: var(--outer-shadow);
+    transform: scale(1);
+    transition: transform 0.4s;
+  }
+
+  .projectCard:hover {
+    transform: scale(1.025) !important;
+    transition: transform 0.56s;
+  }
+
+  .tag {
+    @apply text-textHeadBlack dark:text-white text-sm md:text-base font-semibold;
+    padding: 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .hideScrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hideScrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .toggleThemeBtn:hover {
+    cursor: pointer;
+    box-shadow: var(--inner-shadow);
+    animation: pressShadow 0.2s;
+  }
+
+  .footerDivider {
+    @apply h-2 my-2 w-full rounded-2xl;
+    box-shadow: var(--inner-shadow);
+  }
+
+  .twitterHover {
+    color: #1da1f2;
+  }
+
+  .linkedinHover {
+    color: #0077b5;
+  }
+
+  .normalHover {
+    color: inherit;
+  }
+
+  .nameHead {
+    @apply text-5xl sm:text-6xl md:text-8xl text-textHeadBlack dark:text-drForeGround p-6 font-semibold mt-6 text-center;
+  }
+
+  .noSelect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  }
+
+  .typewriterSection {
+    box-shadow: var(--inner-shadow);
+    @apply text-lg rounded-xl text-drCurrentLine dark:text-drForeGround text-center w-11/12 md:w-9/12 font-medium;
+  }
+
+  .textInput {
+    @apply text-drCurrentLine dark:text-drForeGround text-base rounded-lg font-medium;
+    box-shadow: var(--inner-shadow);
+  }
+
+  @variants dark {
+    .toggleThemeBtnDark {
+      @apply bg-drBackground;
+      box-shadow: var(--dark-outer-shadow);
+      animation: releaseShadowDark 0.2s;
+    }
+
+    .textInputIconSectionDark {
+      border: 1px solid #1c1d26;
+    }
+
+    .toggleThemeBtnDark:hover {
+      box-shadow: var(--dark-inner-shadow);
+      animation: pressShadowDark 0.2s;
+    }
+
+    .typewriterSectionDark {
+      box-shadow: var(--dark-inner-shadow);
+    }
+
+    .bottomShadowDark {
+      box-shadow: var(--bottom-shadow-dark);
+    }
+
+    .outerShadowCircleDark {
+      @apply bg-drBackground;
+      box-shadow: var(--dark-outer-shadow);
+    }
+
+    .imageContainerDark {
+      @apply bg-drBackground;
+      box-shadow: var(--dark-inner-shadow);
+    }
+
+    .textInputDark {
+      box-shadow: var(--dark-inner-shadow);
+    }
+
+    .aboutCardDark {
+      @apply bg-drBackground;
+      box-shadow: var(--dark-outer-shadow);
+    }
+
+    .insetShadowDark {
+      box-shadow: var(--dark-inset);
+    }
+
+    .innerShadowCircleDark {
+      @apply bg-drBackground;
+      box-shadow: var(--dark-inner-shadow);
+    }
+
+    .projectCardDark {
+      @apply bg-drBackground;
+      box-shadow: var(--dark-outer-shadow);
+    }
+
+    .footerDividerDark {
+      box-shadow: var(--dark-inner-shadow);
+    }
+  }
+}
+
+@keyframes slide-in-from-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pressShadowDark {
+  0% {
+    box-shadow: var(--dark-outer-shadow);
+  }
+  25% {
+    box-shadow: var(--dark-outer-shadow-half);
+  }
+  50% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: var(--dark-inner-shadow-half);
+  }
+  100% {
+    box-shadow: var(--dark-inner-shadow);
+  }
+}
+
+@keyframes releaseShadowDark {
+  0% {
+    box-shadow: var(--dark-inner-shadow);
+  }
+  25% {
+    box-shadow: var(--dark-inner-shadow-half);
+  }
+  50% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: var(--dark-outer-shadow-half);
+  }
+  100% {
+    box-shadow: var(--dark-outer-shadow);
+  }
+}
+
+@keyframes pressShadow {
+  0% {
+    box-shadow: var(--outer-shadow);
+  }
+  25% {
+    box-shadow: var(--outer-shadow-half);
+  }
+  50% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: var(--inner-shadow-half);
+  }
+  100% {
+    box-shadow: var(--inner-shadow);
+  }
+}
+
+@keyframes releaseShadow {
+  0% {
+    box-shadow: var(--inner-shadow);
+  }
+  25% {
+    box-shadow: var(--inner-shadow-half);
+  }
+  50% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: var(--outer-shadow-half);
+  }
+  100% {
+    box-shadow: var(--outer-shadow);
+  }
+}
+
+.blinking-cursor {
+  color: var(--androidGreen);
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: var(--androidGreen);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+}
