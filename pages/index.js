@@ -7,8 +7,15 @@ import IntroSection from "../components/IntroSection";
 import Head from "next/head";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import AboutSection from "../components/AboutSection";
+import Menu from "../components/Menu";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   React.useEffect(() => {
     const inViewport = (entries, observer) => {
       entries.forEach((entry) => {
@@ -47,7 +54,8 @@ export default function Home() {
       </Head>
 
       <div className="flex flex-col w-full max-w-screen-2xl items-center overflow-hidden">
-        <Header />
+        <Header onClick={toggleMenu} />
+        <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
         <IntroSection />
 
         <AboutSection />

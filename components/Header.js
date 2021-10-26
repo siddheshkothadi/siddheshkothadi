@@ -2,7 +2,7 @@ import React from "react";
 import ThemeToggleButton from "./ThemeToggleButton";
 import HamburgerButton from "./HamburgerButton";
 
-function Header() {
+function Header(props) {
   const [navbarShadowStyle, setNavbarShadowStyle] = React.useState("");
   const [navNameStyle, setNavNameStyle] = React.useState("");
 
@@ -52,7 +52,7 @@ function Header() {
       </p>
       <div className="flex flex-row ml-auto space-x-4">
         <ThemeToggleButton />
-        <HamburgerButton />
+        <HamburgerButton onClick={props.onClick} />
       </div>
     </header>
   );

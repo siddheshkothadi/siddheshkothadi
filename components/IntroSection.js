@@ -43,7 +43,7 @@ function IntroSection() {
             icon={faChevronDown}
             className="ml-8 align-middle text-center animate-pulse text-orange cursor-pointer downTransition noTapHighlight"
             onClick={() => {
-              window.document.getElementById("projects").scrollIntoView({
+              window.document.getElementById("about").scrollIntoView({
                 behavior: "smooth",
               });
             }}

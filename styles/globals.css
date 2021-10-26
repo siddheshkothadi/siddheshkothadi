@@ -128,6 +128,12 @@ a {
     -webkit-touch-callout: none;
   }
 
+  .menuSlide {
+    transition: 0.6s;
+    transform: translateY(0);
+    animation: slide-up 0.5s;
+  }
+
   .textInputIconSection {
     border: 1px solid #d0d0d0;
   }
@@ -162,6 +168,13 @@ a {
   .innerShadowCircle {
     @apply rounded-full bg-lightBackground;
     box-shadow: var(--inner-shadow);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .innerShadow {
+    @apply bg-lightBackground;
+    box-shadow: var(--inner-shadow);
+    -webkit-tap-highlight-color: transparent;
   }
 
   .outerShadowCircle {
@@ -204,6 +217,9 @@ a {
     box-shadow: var(--outer-shadow);
     transform: scale(1);
     transition: transform 0.4s;
+  }
+
+  .onMenuHover {
   }
 
   .projectCard:hover {
@@ -266,7 +282,7 @@ a {
 
   .typewriterSection {
     box-shadow: var(--inner-shadow);
-    @apply text-lg rounded-xl text-drCurrentLine dark:text-drForeGround text-center w-11/12 md:w-9/12 font-medium;
+    @apply text-lg rounded-lg text-drCurrentLine dark:text-drForeGround text-center w-11/12 md:w-9/12 font-medium;
   }
 
   .textInput {
@@ -324,6 +340,7 @@ a {
     .innerShadowCircleDark {
       @apply bg-drBackground;
       box-shadow: var(--dark-inner-shadow);
+      -webkit-tap-highlight-color: transparent;
     }
 
     .projectCardDark {
@@ -334,6 +351,15 @@ a {
     .footerDividerDark {
       box-shadow: var(--dark-inner-shadow);
     }
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

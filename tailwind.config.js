@@ -27,6 +27,13 @@ module.exports = {
 
         // other colors
         androidGreen: "#3ddc84",
+        js: "#f0db4f",
+        jsDark: "#323330",
+
+        cssDark: "#264de4",
+        css: "#2965f1",
+
+        react: "#61DBFB",
 
         pink: "#ff4088",
         orange: "#fa8142",

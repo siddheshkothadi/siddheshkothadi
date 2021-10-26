@@ -14,6 +14,7 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("here");
     setIsLoading(true);
 
     if (name && email && message) {
@@ -54,6 +55,23 @@ export default function ContactSection() {
       }, 5000);
     }
   };
+
+  useEffect(() => {
+    const submitBtn = window.document.getElementById("submit-btn");
+    submitBtn.addEventListener("keyup", function (e) {
+      if (e.key === "Enter") {
+        handleSubmit(e);
+      }
+    });
+
+    return () => {
+      submitBtn.removeEventListener("keyup", function (e) {
+        if (e.key === "Enter") {
+          handleSubmit(e);
+        }
+      });
+    };
+  }, []);
 
   return (
     <div className="w-11/12 flex pt-20 flex-col pb-8" id="contact">
@@ -133,6 +151,7 @@ export default function ContactSection() {
           </div>
           <div
             className={"toggleThemeBtn dark:toggleThemeBtnDark"}
+            id="submit-btn"
             style={{
               marginTop: "1rem",
               marginBottom: "1rem",
