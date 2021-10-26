@@ -11,32 +11,32 @@ const projects = [
     gitHubLink: null,
     liveLink: null,
   },
-  {
-    name: "Plant Notifier",
-    description:
-      "Android app to notify you when your plant needs water or fertilizer.",
-    tags: [
-      "android",
-      "jetpack-compose",
-      "kotlin",
-      "room-db",
-      "hilt",
-      "flow",
-      "mvvm",
-    ],
-    isProtected: true,
-    gitHubLink: null,
-    liveLink: null,
-  },
-  {
-    name: "Code Type",
-    description:
-      "A web app to help you practice code-typing with top 1000 keywords of the most popular programming languages.",
-    tags: ["nextjs", "tailwindcss"],
-    isProtected: true,
-    gitHubLink: null,
-    liveLink: null,
-  },
+  // {
+  //   name: "Plant Notifier",
+  //   description:
+  //     "Android app to notify you when your plant needs water or fertilizer.",
+  //   tags: [
+  //     "android",
+  //     "jetpack-compose",
+  //     "kotlin",
+  //     "room-db",
+  //     "hilt",
+  //     "flow",
+  //     "mvvm",
+  //   ],
+  //   isProtected: true,
+  //   gitHubLink: null,
+  //   liveLink: null,
+  // },
+  // {
+  //   name: "Code Type",
+  //   description:
+  //     "A web app to help you practice code-typing with top 1000 keywords of the most popular programming languages.",
+  //   tags: ["nextjs", "tailwindcss"],
+  //   isProtected: true,
+  //   gitHubLink: null,
+  //   liveLink: null,
+  // },
   {
     name: "Health Appointment Application",
     description:
@@ -45,7 +45,8 @@ const projects = [
     isProtected: false,
     gitHubLink:
       "https://github.com/Project-Based-Learning-IT/healthcare-appointment-scheduling-app",
-    liveLink: "https://healthcareapp.netlify.app/",
+    // liveLink: "https://healthcareapp.netlify.app/",
+    liveLink: null,
   },
   {
     name: "Easy Notes",
