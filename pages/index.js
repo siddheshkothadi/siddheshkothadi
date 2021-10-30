@@ -39,11 +39,13 @@ export default function Home() {
         <meta property="og:title" content="Siddhesh Kothadi" key="title" />
         <meta
           name="description"
-          content="Siddhesh Kothadi is a software engineer based in Bangalore, India. He is a self-taught programmer and a self-learner. He is a passionate about learning new technologies and solving problems."
+          content="A self taught developer from Pune. Always looking to
+          learn new things. With a passion for android and web development."
         />
         <meta
           property="og:description"
-          content="Siddhesh Kothadi is a software engineer based in Bangalore, India. He is a self-taught programmer and a self-learner. He is a passionate about learning new technologies and solving problems."
+          content="A self taught developer from Pune. Always looking to
+          learn new things. With a passion for android and web development."
           key="description"
         />
         <meta
