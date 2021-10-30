@@ -28,15 +28,15 @@ const projects = [
   //   gitHubLink: null,
   //   liveLink: null,
   // },
-  // {
-  //   name: "Code Type",
-  //   description:
-  //     "A web app to help you practice code-typing with top 1000 keywords of the most popular programming languages.",
-  //   tags: ["nextjs", "tailwindcss"],
-  //   isProtected: true,
-  //   gitHubLink: null,
-  //   liveLink: null,
-  // },
+  {
+    name: "Code Type",
+    description:
+      "Practice code-typing with top 1000 keywords of the most popular programming languages.",
+    tags: ["nextjs", "tailwindcss"],
+    isProtected: false,
+    gitHubLink: "https://github.com/siddheshkothadi/code-type",
+    liveLink: "https://code-type.vercel.app/",
+  },
   {
     name: "Health Appointment Application",
     description:
