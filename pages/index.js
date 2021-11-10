@@ -59,10 +59,16 @@ export default function Home() {
           learn new things. With a passion for android and web development."
           key="description"
         />
-        <meta property="og:image" content="/preview-screenshot.png"></meta>
+        <meta
+          property="og:image"
+          content="https://siddheshkothadi.vercel.app/preview-screenshot.png"
+        ></meta>
 
         {/* Twitter */}
-        <meta property="twitter:card" content="/preview-screenshot.png" />
+        <meta
+          property="twitter:card"
+          content="https://siddheshkothadi.vercel.app/preview-screenshot.png"
+        />
         <meta
           property="twitter:url"
           content="https://siddheshkothadi.vercel.app/"
@@ -72,7 +78,10 @@ export default function Home() {
           property="twitter:description"
           content="A self taught developer from Pune. Always looking to learn new things. With a passion for android and web development."
         />
-        <meta property="twitter:image" content="/preview-screenshot.png"></meta>
+        <meta
+          property="twitter:image"
+          content="https://siddheshkothadi.vercel.app/preview-screenshot.png"
+        ></meta>
       </Head>
 
       <div className="flex flex-col w-full max-w-screen-2xl items-center overflow-hidden">
