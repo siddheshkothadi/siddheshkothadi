@@ -7,7 +7,10 @@ export default function Footer() {
     <footer className=" text-drCurrentLine dark:text-gray-400 py-6 px-6">
       <p className="text-center">
         Find an issue with this page?{" "}
-        <a href="">
+        <a
+          href="https://github.com/siddheshkothadi/siddheshkothadi"
+          target="_blank"
+        >
           <strong className="text-drCurrentLine dark:text-gray-100">
             Fix it on GitHub
           </strong>

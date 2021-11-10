@@ -11,23 +11,23 @@ const projects = [
     gitHubLink: null,
     liveLink: null,
   },
-  // {
-  //   name: "Plant Notifier",
-  //   description:
-  //     "Android app to notify you when your plant needs water or fertilizer.",
-  //   tags: [
-  //     "android",
-  //     "jetpack-compose",
-  //     "kotlin",
-  //     "room-db",
-  //     "hilt",
-  //     "flow",
-  //     "mvvm",
-  //   ],
-  //   isProtected: true,
-  //   gitHubLink: null,
-  //   liveLink: null,
-  // },
+  {
+    name: "Plant Notifier",
+    description:
+      "Android app to notify you when your plant needs water or fertilizer.",
+    tags: [
+      "android",
+      "jetpack-compose",
+      "kotlin",
+      "room-db",
+      "hilt",
+      "flow",
+      "mvvm",
+    ],
+    isProtected: true,
+    gitHubLink: null,
+    liveLink: null,
+  },
   {
     name: "Code Type",
     description:
