@@ -36,23 +36,43 @@ export default function Home() {
     <div className="flex justify-center bg-lightBackground dark:bg-drBackground min-h-screen min-w-screen">
       <Head>
         <title>Siddhesh Kothadi</title>
-        <meta property="og:title" content="Siddhesh Kothadi" key="title" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
+        <link rel="icon" href="/profile-circle.png" />
+
+        <meta name="title" content="Siddhesh Kothadi" />
         <meta
           name="description"
           content="A self taught developer from Pune. Always looking to
           learn new things. With a passion for android and web development."
         />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://siddheshkothadi.vercel.app/" />
+        <meta property="og:title" content="Siddhesh Kothadi" key="title" />
         <meta
           property="og:description"
           content="A self taught developer from Pune. Always looking to
           learn new things. With a passion for android and web development."
           key="description"
         />
+        <meta property="og:image" content="/preview-screenshot.png"></meta>
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="/preview-screenshot.png" />
         <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        ></meta>
-        <link rel="icon" href="/profile-circle.png" />
+          property="twitter:url"
+          content="https://siddheshkothadi.vercel.app/"
+        />
+        <meta property="twitter:title" content="Siddhesh Kothadi" />
+        <meta
+          property="twitter:description"
+          content="A self taught developer from Pune. Always looking to learn new things. With a passion for android and web development."
+        />
+        <meta property="twitter:image" content="/preview-screenshot.png"></meta>
       </Head>
 
       <div className="flex flex-col w-full max-w-screen-2xl items-center overflow-hidden">
