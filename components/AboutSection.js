@@ -84,6 +84,7 @@ function AboutSection() {
               }}
               href="https://github.com/siddheshkothadi/"
               target="_blank"
+              rel="noopener"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -99,6 +100,7 @@ function AboutSection() {
               }}
               href="https://www.linkedin.com/in/siddhesh-kothadi/"
               target="_blank"
+              rel="noopener"
             >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
@@ -114,6 +116,7 @@ function AboutSection() {
               }}
               href="https://twitter.com/siddhesh_kt"
               target="_blank"
+              rel="noopener"
             >
               <FontAwesomeIcon
                 icon={faTwitter}
@@ -131,6 +134,7 @@ function AboutSection() {
               className="flex flex-row flex-wrap space-x-4 pb-4 items-center"
               href="https://siddhesh.bio.link/"
               target="_blank"
+              rel="noopener"
             >
               <span className="text-drCurrentLine dark:text-drForeGround underline">
                 bio.link
@@ -147,6 +151,7 @@ function AboutSection() {
               className="flex flex-row flex-wrap space-x-4 pb-4 items-center"
               href="https://leetcode.com/siddhesh_kt/"
               target="_blank"
+              rel="noopener"
             >
               <span className="text-drCurrentLine dark:text-drForeGround underline">
                 leetcode

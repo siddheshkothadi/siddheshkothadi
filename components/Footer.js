@@ -10,6 +10,7 @@ export default function Footer() {
         <a
           href="https://github.com/siddheshkothadi/siddheshkothadi"
           target="_blank"
+          rel="noopener"
         >
           <strong className="text-drCurrentLine dark:text-gray-100">
             Fix it on GitHub
@@ -25,7 +26,7 @@ export default function Footer() {
 
       <p className="text-center">
         Created with{" "}
-        <a href="https://tailwindcss.com/" target="_blank">
+        <a href="https://tailwindcss.com/" target="_blank" rel="noopener">
           <strong
             style={{
               color: `rgb(6, 182, 212)`,
@@ -35,7 +36,7 @@ export default function Footer() {
           </strong>
         </a>{" "}
         and{" "}
-        <a href="https://nextjs.org/" target="_blank">
+        <a href="https://nextjs.org/" target="_blank" rel="noopener">
           <strong className="text-drCurrentLine dark:text-gray-100">
             next.js
           </strong>
@@ -43,13 +44,13 @@ export default function Footer() {
       </p>
       <p className="text-center">
         Design inspired by{" "}
-        <a href="https://cred.club/" target="_blank">
+        <a href="https://cred.club/" target="_blank" rel="noopener">
           <strong className="text-drCurrentLine dark:text-gray-100">
             cred
           </strong>
         </a>{" "}
         and{" "}
-        <a href="https://fireship.io/" target="_blank">
+        <a href="https://fireship.io/" target="_blank" rel="noopener">
           <strong className="text-orange">fireship</strong>
         </a>
       </p>

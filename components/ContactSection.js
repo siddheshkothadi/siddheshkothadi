@@ -201,6 +201,7 @@ export default function ContactSection() {
             <a
               href="https://twitter.com/siddhesh_kt"
               target="_blank"
+              rel="noopener"
               className="toggleThemeBtn dark:toggleThemeBtnDark twitterHover"
               style={{
                 padding: "1rem",
@@ -218,6 +219,7 @@ export default function ContactSection() {
               className="toggleThemeBtn dark:toggleThemeBtnDark linkedinHover"
               href="https://www.linkedin.com/in/siddhesh-kothadi/"
               target="_blank"
+              rel="noopener"
               style={{
                 padding: "1rem",
               }}
