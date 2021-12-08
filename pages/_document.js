@@ -7,7 +7,7 @@ const isProduction = process.env.NODE_ENV === "production";
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           {/* enable analytics script only for production */}
           {isProduction && (
