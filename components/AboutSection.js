@@ -85,6 +85,7 @@ function AboutSection() {
               href="https://github.com/siddheshkothadi/"
               target="_blank"
               rel="noopener"
+              aria-label="GitHub"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -101,6 +102,7 @@ function AboutSection() {
               href="https://www.linkedin.com/in/siddhesh-kothadi/"
               target="_blank"
               rel="noopener"
+              aria-label="LinkedIn"
             >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
@@ -117,6 +119,7 @@ function AboutSection() {
               href="https://twitter.com/siddhesh_kt"
               target="_blank"
               rel="noopener"
+              aria-label="Twitter"
             >
               <FontAwesomeIcon
                 icon={faTwitter}

@@ -206,6 +206,7 @@ export default function ContactSection() {
               style={{
                 padding: "1rem",
               }}
+              aria-label="Twitter"
             >
               <FontAwesomeIcon
                 icon={faTwitter}
@@ -223,6 +224,7 @@ export default function ContactSection() {
               style={{
                 padding: "1rem",
               }}
+              aria-label="LinkedIn"
             >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
