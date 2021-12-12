@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    name: "CollegeSpace",
+    name: "pairup",
     description:
       "AI based profile recommendation platform for students to find project partners in college.",
     tags: ["react-native", "mysql", "flask", "android"],
