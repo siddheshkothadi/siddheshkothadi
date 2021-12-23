@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import LoadingSpinner from "./LoadingSpinner";
 import { faEnvelope, faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import * as gtag from "../lib/gtag";
 
 export default function ContactSection() {
   const [name, setName] = React.useState("");
@@ -14,8 +15,13 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("here");
     setIsLoading(true);
+
+    gtag.event({
+      action: "submit",
+      category: `name: ${name} | email: ${email}`,
+      label: message,
+    });
 
     if (name && email && message) {
       fetch("/api/contact", {
@@ -207,6 +213,13 @@ export default function ContactSection() {
                 padding: "1rem",
               }}
               aria-label="Twitter"
+              onClick={() => {
+                gtag.event({
+                  action: "view_item",
+                  category: "twitter",
+                  label: "contact_section",
+                });
+              }}
             >
               <FontAwesomeIcon
                 icon={faTwitter}
@@ -225,6 +238,13 @@ export default function ContactSection() {
                 padding: "1rem",
               }}
               aria-label="LinkedIn"
+              onClick={() => {
+                gtag.event({
+                  action: "view_item",
+                  category: "linkedin",
+                  label: "contact_section",
+                });
+              }}
             >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
