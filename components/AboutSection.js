@@ -86,7 +86,7 @@ function AboutSection() {
               aria-label="GitHub"
               onClick={() => {
                 gtag.event({
-                  action: "click",
+                  action: "view_item",
                   category: "github",
                   label: "about_section",
                 });
@@ -110,7 +110,7 @@ function AboutSection() {
               aria-label="LinkedIn"
               onClick={() => {
                 gtag.event({
-                  action: "click",
+                  action: "view_item",
                   category: "linkedin",
                   label: "about_section",
                 });
@@ -134,7 +134,7 @@ function AboutSection() {
               aria-label="Twitter"
               onClick={() => {
                 gtag.event({
-                  action: "click",
+                  action: "view_item",
                   category: "twitter",
                   label: "about_section",
                 });
@@ -159,7 +159,7 @@ function AboutSection() {
               rel="noopener"
               onClick={() => {
                 gtag.event({
-                  action: "click",
+                  action: "view_item",
                   category: "bio.link",
                   label: "about_section",
                 });
@@ -183,7 +183,7 @@ function AboutSection() {
               rel="noopener"
               onClick={() => {
                 gtag.event({
-                  action: "click",
+                  action: "view_item",
                   category: "leetcode",
                   label: "about_section",
                 });
