@@ -2,6 +2,7 @@ import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe, faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import * as gtag from "../lib/gtag";
 
 function ProjectCard(props) {
   const project = props.project;
@@ -36,9 +37,14 @@ function ProjectCard(props) {
                   style={{
                     fontSize: "1.4rem",
                   }}
-                  onClick={() =>
-                    window.open(project.gitHubLink, "_blank", "noopener")
-                  }
+                  onClick={() => {
+                    gtag.event({
+                      action: "view_item",
+                      category: "github",
+                      label: project.name.toLocaleLowerCase(),
+                    });
+                    window.open(project.gitHubLink, "_blank", "noopener");
+                  }}
                 />
               )}
               {project.liveLink && (
@@ -49,9 +55,14 @@ function ProjectCard(props) {
                   style={{
                     fontSize: "1.4rem",
                   }}
-                  onClick={() =>
-                    window.open(project.liveLink, "_blank", "noopener")
-                  }
+                  onClick={() => {
+                    gtag.event({
+                      action: "view_item",
+                      category: "live_link",
+                      label: project.name.toLocaleLowerCase(),
+                    });
+                    window.open(project.liveLink, "_blank", "noopener");
+                  }}
                 />
               )}
             </div>
