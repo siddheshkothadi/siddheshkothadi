@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import * as gtag from "../lib/gtag";
 
 function IntroSection() {
   return (
@@ -33,6 +34,11 @@ function IntroSection() {
               window.document.getElementById("contact").scrollIntoView({
                 behavior: "smooth",
               });
+              gtag.event({
+                action: "view_item",
+                category: "contact_me",
+                label: "intro_section",
+              });
             }}
           >
             <strong className="text-textHeadBlack dark:text-drForeGround noSelect">
@@ -45,6 +51,11 @@ function IntroSection() {
             onClick={() => {
               window.document.getElementById("about").scrollIntoView({
                 behavior: "smooth",
+              });
+              gtag.event({
+                action: "view_item",
+                category: "orange_chevron",
+                label: "intro_section",
               });
             }}
             style={{

@@ -8,12 +8,18 @@ import Head from "next/head";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import AboutSection from "../components/AboutSection";
 import Menu from "../components/Menu";
+import * as gtag from "../lib/gtag";
 
 export default function Home() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    gtag.event({
+      action: "toggle_menu",
+      category: "menu",
+      label: isOpen ? "close" : "open",
+    });
   };
 
   React.useEffect(() => {
