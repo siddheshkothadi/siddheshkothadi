@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import PhotoSection from "./PhotoSection";
+import * as gtag from "../lib/gtag";
 
 const skills = [
   "C++",
@@ -20,14 +21,11 @@ const skills = [
   "HTML",
   "Kotlin",
   "CSS",
-  // "Linux",
-  // "Docker",
   "Javascript",
   "Figma",
   "Express",
   "Jetpack Compose",
   "Nuxt.js",
-  // "Azure",
   "Next.js",
   "Data Structures",
 ];
@@ -86,6 +84,13 @@ function AboutSection() {
               target="_blank"
               rel="noopener"
               aria-label="GitHub"
+              onClick={() => {
+                gtag.event({
+                  action: "click",
+                  category: "github",
+                  label: "about_section",
+                });
+              }}
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -103,6 +108,13 @@ function AboutSection() {
               target="_blank"
               rel="noopener"
               aria-label="LinkedIn"
+              onClick={() => {
+                gtag.event({
+                  action: "click",
+                  category: "linkedin",
+                  label: "about_section",
+                });
+              }}
             >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
@@ -120,6 +132,13 @@ function AboutSection() {
               target="_blank"
               rel="noopener"
               aria-label="Twitter"
+              onClick={() => {
+                gtag.event({
+                  action: "click",
+                  category: "twitter",
+                  label: "about_section",
+                });
+              }}
             >
               <FontAwesomeIcon
                 icon={faTwitter}
@@ -138,6 +157,13 @@ function AboutSection() {
               href="https://siddhesh.bio.link/"
               target="_blank"
               rel="noopener"
+              onClick={() => {
+                gtag.event({
+                  action: "click",
+                  category: "bio.link",
+                  label: "about_section",
+                });
+              }}
             >
               <span className="text-drCurrentLine dark:text-drForeGround underline">
                 bio.link
@@ -155,6 +181,13 @@ function AboutSection() {
               href="https://leetcode.com/siddhesh_kt/"
               target="_blank"
               rel="noopener"
+              onClick={() => {
+                gtag.event({
+                  action: "click",
+                  category: "leetcode",
+                  label: "about_section",
+                });
+              }}
             >
               <span className="text-drCurrentLine dark:text-drForeGround underline">
                 leetcode

@@ -9,7 +9,6 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(isProduction)
     const handleRouteChange = (url) => {
       /* invoke analytics function only for production */
       if (isProduction) gtag.pageview(url);
