@@ -19,7 +19,7 @@ export default function ThemeToggleButton() {
       onClick={() => {
         theme === "light" ? setTheme("dark") : setTheme("light");
         gtag.event({
-          action: "toggle_theme",
+          action: `toggle_theme_${theme}`,
           category: "theme",
           label: theme,
         });

@@ -35,7 +35,7 @@ function IntroSection() {
                 behavior: "smooth",
               });
               gtag.event({
-                action: "view_item",
+                action: "contact_me_button",
                 category: "contact_me",
                 label: "intro_section",
               });
@@ -53,7 +53,7 @@ function IntroSection() {
                 behavior: "smooth",
               });
               gtag.event({
-                action: "view_item",
+                action: "contact_me_chevron",
                 category: "orange_chevron",
                 label: "intro_section",
               });

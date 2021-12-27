@@ -39,7 +39,7 @@ function ProjectCard(props) {
                   }}
                   onClick={() => {
                     gtag.event({
-                      action: "view_item",
+                      action: `github_${project.name.toLocaleLowerCase()}`,
                       category: "github",
                       label: project.name.toLocaleLowerCase(),
                     });
@@ -57,7 +57,7 @@ function ProjectCard(props) {
                   }}
                   onClick={() => {
                     gtag.event({
-                      action: "view_item",
+                      action: `live_${project.name.toLocaleLowerCase()}`,
                       category: "live_link",
                       label: project.name.toLocaleLowerCase(),
                     });

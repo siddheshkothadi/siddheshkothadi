@@ -18,7 +18,7 @@ export default function ContactSection() {
     setIsLoading(true);
 
     gtag.event({
-      action: "submit",
+      action: `submit contact form with name: ${name} and email: ${email}`,
       category: `name: ${name} | email: ${email}`,
       label: message,
     });
@@ -215,7 +215,7 @@ export default function ContactSection() {
               aria-label="Twitter"
               onClick={() => {
                 gtag.event({
-                  action: "view_item",
+                  action: "twitter_contact_section",
                   category: "twitter",
                   label: "contact_section",
                 });
@@ -240,7 +240,7 @@ export default function ContactSection() {
               aria-label="LinkedIn"
               onClick={() => {
                 gtag.event({
-                  action: "view_item",
+                  action: "linkedin_contact_section",
                   category: "linkedin",
                   label: "contact_section",
                 });
