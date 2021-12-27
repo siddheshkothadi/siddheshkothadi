@@ -11,6 +11,9 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=siddheshkothadi&layout=compact&theme=radical)](https://github.com/siddheshkothadi/github-readme-stats)
 
 <a href="https://twitter.com/siddhesh_kt"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"/></a> <a href='https://www.linkedin.com/in/siddhesh-kothadi-a25362191/'><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> <a href="mailto:siddhesh.kt@gmail.com"><img src="https://img.shields.io/badge/siddhesh.kt@gmail.com-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
+
+<img height="180em" style="max-width:100%;" src="https://github-readme-streak-stats.herokuapp.com?user=siddheshkothadi&theme=radical">
+
 <!--
 **siddheshkothadi/siddheshkothadi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
