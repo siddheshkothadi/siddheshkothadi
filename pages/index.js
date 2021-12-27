@@ -48,11 +48,14 @@ export default function Home() {
         ></meta>
         <link rel="icon" href="/profile-circle.png" />
 
-        <meta name="title" content="Siddhesh Kothadi" />
+        <meta name="title" content="Siddhesh Kothadi - Portfolio" />
         <meta
           name="description"
-          content="A self taught developer from Pune. Always looking to
-          learn new things. With a passion for android and web development."
+          content="Siddhesh Kothadi, a self taught developer from Pune, India. I build cool stuff on android and web."
+        />
+        <meta
+          name="keywords"
+          content="siddhesh kothadi, siddhesh, kothadi, portfolio, android, web"
         />
 
         {/* Open Graph / Facebook */}
