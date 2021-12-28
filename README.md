@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 <div align="center">
   <h1>Hello, I'm Siddhesh 👋</h1>
   
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=A9FEF7&size=36&center=true&vCenter=true&width=1000&height=100&font=Poppins&lines=👨‍💻+Android+📱+and+web+developer+🕸️;👨‍🎓+Currently+learning+CS+fundamentals;🌱+Fun+fact:+I+like+gardening+🪴;📫+Reach+out+to+me+on+Twitter+@siddhesh_kt)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=A9FEF7&size=36&center=true&vCenter=true&width=1000&height=100&font=Poppins&lines=👨‍💻+Android+📱+and+web+developer+🕸️;👨‍🎓+Currently+learning+CS+fundamentals;😄+Pronouns:+he/him+👨;🌱+Fun+fact:+I+like+gardening+🪴;📫+Reach+out+to+me+on+Twitter+@siddhesh_kt)](https://git.io/typing-svg)
 
 </div>
 
@@ -37,7 +37,14 @@ Here are some ideas to get you started:
 <br>
 
 <div align="center">
-<a href="https://twitter.com/siddhesh_kt"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"/></a> <a href='https://www.linkedin.com/in/siddhesh-kothadi-a25362191/'><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> <a href="mailto:siddhesh.kt@gmail.com"><img src="https://img.shields.io/badge/siddhesh.kt@gmail.com-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://twitter.com/siddhesh_kt"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"/></a>
+  <a href='https://www.linkedin.com/in/siddhesh-kothadi-a25362191/'><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:siddhesh.kt@gmail.com"><img src="https://img.shields.io/badge/siddhesh.kt@gmail.com-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</div>
+
+<br>
+<div align="center">
+  <p>Want to know more about me? <a href="https://www.siddheshkothadi.me">Check out my portfolio.</a></p>
 </div>
 
 <!-- Android image -->
