@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 <div align="center">
   <h1>Hello, I'm Siddhesh 👋</h1>
   
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=A9FEF7&size=36&center=true&vCenter=true&width=1000&height=100&font=Poppins&lines=👨‍💻+Android+📱+and+web+developer+🕸️;👨‍🎓+Currently+learning+CS+fundamentals;😄+Pronouns:+he/him+👨;🌱+Fun+fact:+I+like+gardening+🪴;📫+Reach+out+to+me+on+Twitter+@siddhesh_kt)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=A9FEF7&size=36&center=true&vCenter=true&width=1000&height=100&font=Poppins&lines=👨‍💻+Android+📱+and+web+developer+🕸️;📚+Learning+CS+fundamentals+🧠;😄+Pronouns:+he/him;🌱+Fun+fact:+I+like+gardening+🪴;🎧+Synthwave,+Techno+⚡;📫+Twitter:+@siddhesh_kt)](https://git.io/typing-svg)
 
 </div>
 
