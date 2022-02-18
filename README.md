@@ -3,8 +3,8 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/siddhesh_kt?label=Follow)](https://twitter.com/intent/follow?screen_name=siddhesh_kt)
 ![GitHub followers](https://img.shields.io/github/followers/siddheshkothadi?label=Follow&style=social)
 [![Linkedin: Siddhesh](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/siddhesh-kothadi/)](https://www.linkedin.com/in/siddhesh-kothadi/)
-[![Leetcode](https://img.shields.io/badge/Leetcode-F7D747)](https://siddheshkothadi.me)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FD428D)](https://leetcode.com/siddhesh_kt)
+[![Leetcode](https://img.shields.io/badge/Leetcode-F7D747)](https://leetcode.com/siddhesh_kt)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FD428D)](https://siddheshkothadi.me)
 <img alt = "profile views" src="https://komarev.com/ghpvc/?username=siddheshkothadi&color=brightgreen">
 
 ## 👨‍💻 &nbsp;About Me
