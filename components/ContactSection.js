@@ -15,6 +15,9 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if(isLoading || isSent) return;
+
     setIsLoading(true);
 
     gtag.event({
@@ -37,9 +40,7 @@ export default function ContactSection() {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
           setIsSent(true);
-          console.log("Message sent");
           setIsLoading(false);
           setTimeout(() => {
             setIsSent(null);
