@@ -5,12 +5,16 @@ import LoadingSpinner from "./LoadingSpinner";
 import { faEnvelope, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import * as gtag from "../lib/gtag";
 
+function isEmailValid(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
 export default function ContactSection() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
-
+  const [btnText, setBtnText] = React.useState("Submit");
   const [isSent, setIsSent] = React.useState(null);
 
   const handleSubmit = (e) => {
@@ -26,7 +30,7 @@ export default function ContactSection() {
       label: message,
     });
 
-    if (name && email && message) {
+    if (name && isEmailValid(email) && message) {
       fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -38,26 +42,39 @@ export default function ContactSection() {
           message,
         }),
       })
-        .then((res) => res.json())
+        .then((res) => {
+          if (res.status === 200) {
+            return res.json();
+          }
+          else {
+            throw new Error(res.statusText);
+          }
+        })
         .then((data) => {
           setIsSent(true);
+          setBtnText("Message Sent");
           setIsLoading(false);
           setTimeout(() => {
+            setBtnText("Submit");
             setIsSent(null);
           }, 5000);
         })
         .catch((err) => {
           console.log(err);
           setIsSent(false);
+          setBtnText("Could not send message");
           setIsLoading(false);
           setTimeout(() => {
+            setBtnText("Submit");
             setIsSent(null);
           }, 5000);
         });
     } else {
       setIsLoading(false);
       setIsSent(false);
+      setBtnText("Fill the details properly");
       setTimeout(() => {
+        setBtnText("Submit");
         setIsSent(null);
       }, 5000);
     }
@@ -176,17 +193,17 @@ export default function ContactSection() {
           >
             {!isLoading && isSent == null && (
               <strong className="text-textHeadBlack dark:text-drForeGround noSelect">
-                Submit
+                {btnText}
               </strong>
             )}
             {!isLoading && isSent === false && (
               <strong className="text-drRed noSelect">
-                Couldn't send message
+                {btnText}
               </strong>
             )}
             {!isLoading && isSent === true && (
               <strong className="text-textHeadBlack noSelect">
-                Message sent
+                {btnText}
               </strong>
             )}
             {isLoading && <LoadingSpinner />}
