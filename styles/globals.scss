@@ -1,0 +1,26 @@
+@use "./m3.scss" as m3;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: m3.$light-surface;
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  font-size: m3.$display1;
+  font-weight: 700;
+  line-height: 3.75rem;
+  color: m3.$light-on-surface;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
