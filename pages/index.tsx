@@ -13,9 +13,19 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>
-          Welcome to <a href="https://nextjs.org">M3</a>
-        </h1>
+        <div style={{
+          margin: '50px',
+          borderRadius: '64px',
+          padding: '100px 64px',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '0 50%',
+          backgroundSize: 'cover',
+          backgroundImage: `url('https://lh3.googleusercontent.com/RY0vSndUvP4ErZbsZkO_QqlOpxED-KlgCb-bMZ5zHyMNSgMkNRU5p6UAflwDiwdvUr-nS7rLKjWtPHY0N3ypkVTq1gKLc2EWAYmskhp-Xg8CMe5Jw6c=w1200-rj')`,
+        }}>
+          <h1>
+            Dynamic color
+          </h1>
+        </div>
       </main>
 
       <footer>
