@@ -5,16 +5,29 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: m3.$light-surface;
   font-family: "Manrope", sans-serif;
 }
 
-h1 {
-  font-size: m3.$display1;
-  font-weight: 700;
-  line-height: 3.75rem;
-  letter-spacing: -.0083333333em;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightSurfaceBg {
+  background-color: m3.$light-surface;
+}
+
+.darkSurfaceBg {
+  background-color: m3.$dark-surface;
+}
+
+.lightOnSurface {
   color: m3.$light-on-surface;
+}
+
+.darkOnSurface {
+  color: m3.$dark-on-surface;
 }
 
 a {

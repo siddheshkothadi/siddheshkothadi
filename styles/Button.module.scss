@@ -1,0 +1,41 @@
+@use "./m3.scss" as m3;
+
+.lightBg {
+    background-color: m3.$light-secondary-container;
+}
+
+.darkBg {
+    background-color: m3.$dark-secondary-container;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 2rem;
+    border-radius: 1.75rem;
+    cursor: pointer;
+    width: fit-content;
+    min-width: 4rem;
+    transition-duration: 0.28s;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.lightBg:hover {
+    background-color: m3.$ref-secondary-secondary80;
+}
+
+.darkBg:hover {
+    background-color: m3.$ref-secondary-secondary40;
+}
+
+// Hover effect for inactive button [Text Button]
+.hoverLight:hover {
+    background-color: m3.$ref-neutral-neutral90;
+}
+
+.hoverDark:hover {
+    background-color: m3.$ref-neutral-neutral10;
+}

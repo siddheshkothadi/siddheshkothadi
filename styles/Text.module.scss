@@ -1,0 +1,147 @@
+@use "./m3.scss" as m3;
+
+.text {
+  line-height: 1.5;
+}
+
+.lightTextColor {
+  color: m3.$light-on-primary-container;
+}
+
+.darkTextColor {
+  color: m3.$dark-on-primary-container;
+}
+
+.display1 {
+  font-size: m3.$display1;
+  font-weight: 700;
+  line-height: 3.75rem;
+  letter-spacing: -.0083333333em;
+}
+
+.display2 {
+  font-size: m3.$display2;
+}
+
+.display3 {
+  font-size: m3.$display3;
+}
+
+.headline1 {
+  font-size: m3.$headline1;
+}
+
+.headline2 {
+  font-size: m3.$headline2;
+}
+
+.headline3 {
+  font-size: m3.$headline3;
+}
+
+.headline4 {
+  font-size: m3.$headline4;
+}
+
+.headline5 {
+  font-size: m3.$headline5;
+}
+
+.headline6 {
+  font-size: m3.$headline6;
+}
+
+.subhead1 {
+  font-size: m3.$subhead1;
+}
+
+.subhead2 {
+  font-size: m3.$subhead2;
+}
+
+.button {
+  font-size: m3.$button;
+  font-weight: 700;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.body1 {
+  font-size: m3.$body1;
+}
+
+.body2 {
+  font-size: m3.$body2;
+}
+
+.caption {
+  font-size: m3.$caption;
+}
+
+.overline {
+  font-size: m3.$overline;
+}
+
+.labelSmall {
+  font-size: m3.$label-small;
+}
+
+.displayLarge {
+  font-size: m3.$display-large;
+}
+
+.displayMedium {
+  font-size: m3.$display-medium;
+}
+
+.displaySmall {
+  font-size: m3.$display-small;
+}
+
+.headlineLarge {
+  font-size: m3.$headline-large;
+}
+
+.headlineMedium {
+  font-size: m3.$headline-medium;
+}
+
+.headlineSmall {
+  font-size: m3.$headline-small;
+}
+
+.titleLarge {
+  font-size: m3.$title-large;
+}
+
+.titleMedium {
+  font-size: m3.$title-medium;
+}
+
+.titleSmall {
+  font-size: m3.$title-small;
+}
+
+.labelLarge {
+  font-size: m3.$label-large;
+}
+
+.labelMedium {
+  font-size: m3.$label-medium;
+}
+
+.bodyLarge {
+  font-size: m3.$body-large;
+}
+
+.bodyMedium {
+  font-size: m3.$body-medium;
+}
+
+.bodySmall {
+  font-size: m3.$body-small;
+}

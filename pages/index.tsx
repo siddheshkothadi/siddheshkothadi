@@ -1,9 +1,18 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.scss";
+import { useTheme } from "next-themes";
+import Button from "../components/Button";
+import { Text, TextSize } from "../components/Text";
 
 const Home: NextPage = () => {
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <div>
       <Head>
@@ -13,25 +22,19 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div style={{
-          margin: '50px',
-          borderRadius: '64px',
-          padding: '100px 64px',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: '0 50%',
-          backgroundSize: 'cover',
-          backgroundImage: `url('https://lh3.googleusercontent.com/RY0vSndUvP4ErZbsZkO_QqlOpxED-KlgCb-bMZ5zHyMNSgMkNRU5p6UAflwDiwdvUr-nS7rLKjWtPHY0N3ypkVTq1gKLc2EWAYmskhp-Xg8CMe5Jw6c=w1200-rj')`,
-        }}>
-          <h1>
-            Dynamic color
-          </h1>
+        <div className={styles.mainContainer}>
+          <div className={styles.banner}>
+            <Text size={TextSize.DISPLAY1}>Dynamic Color</Text>
+          </div>
+          <Button onClick={toggleTheme}>
+            <Text>Home</Text>
+          </Button>
         </div>
       </main>
 
-      <footer>
-      </footer>
+      <footer></footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
