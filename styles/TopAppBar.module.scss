@@ -1,0 +1,47 @@
+@use "./m3.scss" as m3;
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    max-width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    min-width: 0px;
+    padding: 0.5rem 1rem;
+    z-index: 1;
+}
+
+.rightSection {
+    justify-content: flex-end;
+}
+
+.lightBg {
+    background-color: m3.$ref-primary-primary95;
+}
+
+.darkBg {
+    background-color: m3.$ref-primary-primary10;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+@media only screen
+and (min-width : 1824px) {
+    .headerContainer {
+        max-width: 1824px;
+    }
+}

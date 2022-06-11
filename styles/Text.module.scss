@@ -1,7 +1,6 @@
 @use "./m3.scss" as m3;
 
 .text {
-  line-height: 1.5;
 }
 
 .lightTextColor {
@@ -53,6 +52,7 @@
 
 .subhead1 {
   font-size: m3.$subhead1;
+  font-weight: 700;
 }
 
 .subhead2 {
@@ -116,6 +116,7 @@
 
 .titleLarge {
   font-size: m3.$title-large;
+  font-weight: 700;
 }
 
 .titleMedium {
@@ -144,4 +145,139 @@
 
 .bodySmall {
   font-size: m3.$body-small;
+}
+
+/*
+switch(color) {
+            case TextColor.ON_PRIMARY:
+                return theme === "light" ? styles.onPrimary : styles.onPrimaryDark;
+            case TextColor.ON_SECONDARY:
+                return theme === "light" ? styles.onSecondary : styles.onSecondaryDark;
+            case TextColor.ON_TERTIARY:
+                return theme === "light" ? styles.onTertiary : styles.onTertiaryDark;
+            case TextColor.ON_PRIMARY_CONTAINER:
+                return theme === "light" ? styles.onPrimaryContainer : styles.onPrimaryContainerDark;
+            case TextColor.ON_SECONDARY_CONTAINER:
+                return theme === "light" ? styles.onSecondaryContainer : styles.onSecondaryContainerDark;
+            case TextColor.ON_TERTIARY_CONTAINER:
+                return theme === "light" ? styles.onTertiaryContainer : styles.onTertiaryContainerDark;
+            case TextColor.ON_ERROR:
+                return theme === "light" ? styles.onError : styles.onErrorDark;
+            case TextColor.ON_ERROR_CONTAINER:
+                return theme === "light" ? styles.onErrorContainer : styles.onErrorContainerDark;
+            case TextColor.ON_SURFACE:
+                return theme === "light" ? styles.onSurface : styles.onSurfaceDark;
+            case TextColor.ON_SURFACE_VARIANT:
+                return theme === "light" ? styles.onSurfaceVariant : styles.onSurfaceVariantDark;
+            case TextColor.INVERSE_ON_SURFACE:
+                return theme === "light" ? styles.inverseOnSurface : styles.inverseOnSurfaceDark;
+            case TextColor.ON_BACKGROUND:
+                return theme === "light" ? styles.onBackground : styles.onBackgroundDark;
+            default:
+                return theme === "light" ? styles.lightTextColor : styles.darkTextColor;
+        }
+*/
+
+.onPrimary {
+  color: m3.$light-on-primary;
+}
+
+.onPrimaryDark {
+  color: m3.$dark-on-primary;
+}
+
+.onSecondary {
+  color: m3.$light-on-secondary;
+}
+
+.onSecondaryDark {
+  color: m3.$dark-on-secondary;
+}
+
+.onTertiary {
+  color: m3.$light-on-tertiary;
+}
+
+.onTertiaryDark {
+  color: m3.$dark-on-tertiary;
+}
+
+.onPrimaryContainer {
+  color: m3.$light-on-primary-container;
+}
+
+.onPrimaryContainerDark {
+  color: m3.$dark-on-primary-container;
+}
+
+.onSecondaryContainer {
+  color: m3.$light-on-secondary-container;
+}
+
+.onSecondaryContainerDark {
+  color: m3.$dark-on-secondary-container;
+}
+
+.onTertiaryContainer {
+  color: m3.$light-on-tertiary-container;
+}
+
+.onTertiaryContainerDark {
+  color: m3.$dark-on-tertiary-container;
+}
+
+.onError {
+  color: m3.$light-on-error;
+}
+
+.onErrorDark {
+  color: m3.$dark-on-error;
+}
+
+.onErrorContainer {
+  color: m3.$light-on-error-container;
+}
+
+.onErrorContainerDark {
+  color: m3.$dark-on-error-container;
+}
+
+.onSurface {
+  color: m3.$light-on-surface;
+}
+
+.onSurfaceDark {
+  color: m3.$dark-on-surface;
+}
+
+.onSurfaceVariant {
+  color: m3.$light-on-surface-variant;
+}
+
+.onSurfaceVariantDark {
+  color: m3.$dark-on-surface-variant;
+}
+
+.inverseOnSurface {
+  color: m3.$light-inverse-on-surface;
+}
+
+.inverseOnSurfaceDark {
+  color: m3.$dark-inverse-on-surface;
+}
+
+.onBackground {
+  color: m3.$light-on-background;
+}
+
+.onBackgroundDark {
+  color: m3.$dark-on-background;
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
 }

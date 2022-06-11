@@ -48,7 +48,9 @@ enum TextColor {
     ON_SURFACE,
     ON_SURFACE_VARIANT,
     INVERSE_ON_SURFACE,
-    ON_BACKGROUND
+    ON_BACKGROUND,
+    BLACK,
+    WHITE
 }
 
 interface TextProps {
@@ -130,11 +132,39 @@ const Text: FC<TextProps> = ({children, onClick, size=TextSize.BUTTON, color}) =
         }
     }
 
-    const getTextColor = () => {
-        if(color === undefined) {
-            return theme === "light" ? styles.lightTextColor : styles.darkTextColor;
+    const getTextColor = () => {        
+        switch(color) {
+            case TextColor.ON_PRIMARY:
+                return theme === "light" ? styles.onPrimary : styles.onPrimaryDark;
+            case TextColor.ON_SECONDARY:
+                return theme === "light" ? styles.onSecondary : styles.onSecondaryDark;
+            case TextColor.ON_TERTIARY:
+                return theme === "light" ? styles.onTertiary : styles.onTertiaryDark;
+            case TextColor.ON_PRIMARY_CONTAINER:
+                return theme === "light" ? styles.onPrimaryContainer : styles.onPrimaryContainerDark;
+            case TextColor.ON_SECONDARY_CONTAINER:
+                return theme === "light" ? styles.onSecondaryContainer : styles.onSecondaryContainerDark;
+            case TextColor.ON_TERTIARY_CONTAINER:
+                return theme === "light" ? styles.onTertiaryContainer : styles.onTertiaryContainerDark;
+            case TextColor.ON_ERROR:
+                return theme === "light" ? styles.onError : styles.onErrorDark;
+            case TextColor.ON_ERROR_CONTAINER:
+                return theme === "light" ? styles.onErrorContainer : styles.onErrorContainerDark;
+            case TextColor.ON_SURFACE:
+                return theme === "light" ? styles.onSurface : styles.onSurfaceDark;
+            case TextColor.ON_SURFACE_VARIANT:
+                return theme === "light" ? styles.onSurfaceVariant : styles.onSurfaceVariantDark;
+            case TextColor.INVERSE_ON_SURFACE:
+                return theme === "light" ? styles.inverseOnSurface : styles.inverseOnSurfaceDark;
+            case TextColor.ON_BACKGROUND:
+                return theme === "light" ? styles.onBackground : styles.onBackgroundDark;
+            case TextColor.BLACK:
+                return styles.black;
+            case TextColor.WHITE:
+                return styles.white;
+            default:
+                return theme === "light" ? styles.lightTextColor : styles.darkTextColor;
         }
-        // TODO:
     }
 
     const getClassNameForText = () => {
@@ -148,4 +178,4 @@ const Text: FC<TextProps> = ({children, onClick, size=TextSize.BUTTON, color}) =
     );
 }
 
-export {Text, TextSize};
+export {Text, TextSize, TextColor};

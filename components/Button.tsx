@@ -6,9 +6,10 @@ interface ButtonProps {
     children?: React.ReactNode;
     onClick?: () => void;
     isActive?: boolean;
+    isIconButton?: boolean;
 }
 
-const Button: FC<ButtonProps> = ({children, onClick, isActive = false}) => {
+const Button: FC<ButtonProps> = ({children, onClick, isActive = true, isIconButton = false}) => {
     const { theme } = useTheme();
 
     const getHoverStyle = () => {
@@ -25,8 +26,19 @@ const Button: FC<ButtonProps> = ({children, onClick, isActive = false}) => {
         return ""
     }
 
+    const getButtonStyle = () => {
+        if (isIconButton) {
+            return styles.iconButton;
+        }
+        return styles.textButton;
+    }
+
+    const getTextColor = () => {
+        return theme === "light" ? styles.lightText : styles.darkText;
+    }
+
     const getClassNameForButton = () => {
-        return `${styles.button} ${getBgColor()} ${getHoverStyle()}`;
+        return `${styles.button} ${getButtonStyle()} ${getBgColor()} ${getHoverStyle()} ${getTextColor()}`;
     }
 
     return (

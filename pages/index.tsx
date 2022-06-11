@@ -4,15 +4,13 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { useTheme } from "next-themes";
 import Button from "../components/Button";
-import { Text, TextSize } from "../components/Text";
+import { Text, TextColor, TextSize } from "../components/Text";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun, faMoon, IconDefinition } from '@fortawesome/free-solid-svg-icons'
+import TopAppBar from "../components/TopAppBar";
+import ThemeToggleButton from "../components/ThemeToggleButton";
 
 const Home: NextPage = () => {
-  const { theme, setTheme } = useTheme();
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
-
   return (
     <div>
       <Head>
@@ -23,15 +21,30 @@ const Home: NextPage = () => {
 
       <main>
         <div className={styles.mainContainer}>
+          <TopAppBar />
           <div className={styles.banner}>
-            <Text size={TextSize.DISPLAY1}>Dynamic Color</Text>
+            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
           </div>
-          <Button onClick={toggleTheme}>
-            <Text>Home</Text>
-          </Button>
+          <div className={styles.banner}>
+            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
+          </div>
+          <div className={styles.banner}>
+            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
+          </div>
+          <div className={styles.banner}>
+            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
+          </div>
+          <div className={styles.banner}>
+            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
+          </div>
+          <div className={styles.banner}>
+            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
+          </div>
+          <div className={styles.banner}>
+            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
+          </div>
         </div>
       </main>
-
       <footer></footer>
     </div>
   );
