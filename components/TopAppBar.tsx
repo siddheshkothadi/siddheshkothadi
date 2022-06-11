@@ -63,11 +63,11 @@ const TopAppBar: FC = () => {
         </Button>
         <Spacer width={0.3}/>
         <Button isActive={false}>
-          <Text>About</Text>
+          <Text>Projects</Text>
         </Button>
         <Spacer width={0.3}/>
         <Button isActive={false}>
-          <Text>Work</Text>
+          <Text>Blog</Text>
         </Button>
         <Spacer width={0.3}/>
         <Button isActive={false}>

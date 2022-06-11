@@ -10,7 +10,7 @@ const Spacer: FC<SpacerProps> = ({ height, width }) => {
     height: height ? height + "rem" : "auto",
     width: width ? width + "rem" : "auto",
   };
-  return <span style={style}></span>;
+  return <div style={style}></div>;
 };
 
 export default Spacer;

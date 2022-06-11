@@ -5,14 +5,31 @@
 }
 
 .banner {
+    display: flex;
+    justify-content: space-around;
     margin: 4rem;
     margin-top: 7rem;
-    border-radius: 64px;
-    padding: 100px 64px;
+    border-radius: 4rem;
+    padding: 4rem 2rem;
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: cover;
-    background-image: m3.$banner13;
+    background-image: m3.$banner17;
+}
+
+.leftPart {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+}
+
+.rightPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
 }
 
 /* Smartphones (portrait and landscape) ----------- */

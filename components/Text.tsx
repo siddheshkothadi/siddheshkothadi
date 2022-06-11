@@ -37,6 +37,9 @@ enum TextSize {
 }
 
 enum TextColor {
+    PRIMARY,
+    SECONDARY,
+    TERTIARY,
     ON_PRIMARY,
     ON_SECONDARY,
     ON_TERTIARY,
@@ -134,6 +137,12 @@ const Text: FC<TextProps> = ({children, onClick, size=TextSize.BUTTON, color}) =
 
     const getTextColor = () => {        
         switch(color) {
+            case TextColor.PRIMARY:
+                return theme === "light" ? styles.primary : styles.primaryDark;
+            case TextColor.SECONDARY:
+                return theme === "light" ? styles.secondary : styles.secondaryDark;
+            case TextColor.TERTIARY:
+                return theme === "light" ? styles.tertiary : styles.tertiaryDark;
             case TextColor.ON_PRIMARY:
                 return theme === "light" ? styles.onPrimary : styles.onPrimaryDark;
             case TextColor.ON_SECONDARY:

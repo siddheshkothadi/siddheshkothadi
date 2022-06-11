@@ -1,8 +1,5 @@
 @use "./m3.scss" as m3;
 
-.text {
-}
-
 .lightTextColor {
   color: m3.$light-on-primary-container;
 }
@@ -147,36 +144,29 @@
   font-size: m3.$body-small;
 }
 
-/*
-switch(color) {
-            case TextColor.ON_PRIMARY:
-                return theme === "light" ? styles.onPrimary : styles.onPrimaryDark;
-            case TextColor.ON_SECONDARY:
-                return theme === "light" ? styles.onSecondary : styles.onSecondaryDark;
-            case TextColor.ON_TERTIARY:
-                return theme === "light" ? styles.onTertiary : styles.onTertiaryDark;
-            case TextColor.ON_PRIMARY_CONTAINER:
-                return theme === "light" ? styles.onPrimaryContainer : styles.onPrimaryContainerDark;
-            case TextColor.ON_SECONDARY_CONTAINER:
-                return theme === "light" ? styles.onSecondaryContainer : styles.onSecondaryContainerDark;
-            case TextColor.ON_TERTIARY_CONTAINER:
-                return theme === "light" ? styles.onTertiaryContainer : styles.onTertiaryContainerDark;
-            case TextColor.ON_ERROR:
-                return theme === "light" ? styles.onError : styles.onErrorDark;
-            case TextColor.ON_ERROR_CONTAINER:
-                return theme === "light" ? styles.onErrorContainer : styles.onErrorContainerDark;
-            case TextColor.ON_SURFACE:
-                return theme === "light" ? styles.onSurface : styles.onSurfaceDark;
-            case TextColor.ON_SURFACE_VARIANT:
-                return theme === "light" ? styles.onSurfaceVariant : styles.onSurfaceVariantDark;
-            case TextColor.INVERSE_ON_SURFACE:
-                return theme === "light" ? styles.inverseOnSurface : styles.inverseOnSurfaceDark;
-            case TextColor.ON_BACKGROUND:
-                return theme === "light" ? styles.onBackground : styles.onBackgroundDark;
-            default:
-                return theme === "light" ? styles.lightTextColor : styles.darkTextColor;
-        }
-*/
+.primary {
+  color: m3.$light-primary;
+}
+
+.primaryDark {
+  color: m3.$dark-primary;
+}
+
+.secondary {
+  color: m3.$light-secondary;
+}
+
+.secondaryDark {
+  color: m3.$dark-secondary;
+}
+
+.tertiary {
+  color: m3.$light-tertiary;
+}
+
+.tertiaryDark {
+  color: m3.$dark-tertiary;
+}
 
 .onPrimary {
   color: m3.$light-on-primary;

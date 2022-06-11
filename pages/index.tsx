@@ -9,8 +9,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon, IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import TopAppBar from "../components/TopAppBar";
 import ThemeToggleButton from "../components/ThemeToggleButton";
+import Spacer from "../components/Spacer";
+import Lottie, { LottieOptions } from "lottie-react";
+import coderAnimation from "../public/lottie/coder.json";
+import blueCoder from "../public/lottie/blue-coder.json";
 
 const Home: NextPage = () => {
+  const options: LottieOptions = {
+    animationData: coderAnimation,
+    loop: true,
+    autoplay: true,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
+
   return (
     <div>
       <Head>
@@ -23,26 +36,19 @@ const Home: NextPage = () => {
         <div className={styles.mainContainer}>
           <TopAppBar />
           <div className={styles.banner}>
-            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
+            <div className={styles.leftPart}>
+              <Text size={TextSize.DISPLAY1} color={TextColor.ON_PRIMARY_CONTAINER}>Hi, I'm</Text>
+              <Text size={TextSize.DISPLAY1} color={TextColor.ON_PRIMARY_CONTAINER}>Siddhesh</Text>
+              <Text size={TextSize.DISPLAY1} color={TextColor.ON_PRIMARY_CONTAINER}>Kothadi</Text>
+              <Spacer height={2} />
+
+              <Text size={TextSize.HEADLINE4} color={TextColor.ON_PRIMARY_CONTAINER}>A budding software engineer interested in solving real-world problems using software engineering principles. Interested in web and android development.</Text>
+            </div>
+            <div className={styles.rightPart}>
+              <Lottie animationData={blueCoder} style={{ height: "400px" }} />
+            </div>
           </div>
-          <div className={styles.banner}>
-            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
-          </div>
-          <div className={styles.banner}>
-            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
-          </div>
-          <div className={styles.banner}>
-            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
-          </div>
-          <div className={styles.banner}>
-            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
-          </div>
-          <div className={styles.banner}>
-            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
-          </div>
-          <div className={styles.banner}>
-            <Text size={TextSize.DISPLAY1} color={TextColor.BLACK}>Dynamic Color</Text>
-          </div>
+
         </div>
       </main>
       <footer></footer>
