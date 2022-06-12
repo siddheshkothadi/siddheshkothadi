@@ -10,20 +10,24 @@
     max-width: 100vw;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 
 .section {
     display: flex;
     align-items: center;
+    flex-direction: row;
     min-width: 0px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     z-index: 1;
 }
 
+.menu {
+    display: block;
+    padding: 0 0.2rem;
+}
+
 .rightSection {
+    display: none;
     justify-content: flex-end;
 }
 
@@ -37,6 +41,18 @@
 
 .transparent {
     background-color: transparent;
+}
+
+@media only screen
+and (max-width : 320px) {
+    
+}
+
+@media only screen
+and (min-width : 768px) {
+    .rightSection {
+        display: flex;
+    }
 }
 
 @media only screen

@@ -7,14 +7,22 @@
 .banner {
     display: flex;
     justify-content: space-around;
-    margin: 4rem;
+    margin: 0 1rem;
     margin-top: 7rem;
     border-radius: 4rem;
-    padding: 4rem 2rem;
+    padding: 0 2rem;
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: cover;
     background-image: m3.$banner17;
+}
+
+.bannerContainer {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .leftPart {
@@ -26,12 +34,30 @@
 }
 
 .rightPart {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex: 4;
 }
 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+
+}
+
+@media only screen
+and (min-width : 768px) {
+    .rightPart {
+        display: inline-flex;
+    }
+
+    .banner {
+        margin: 2rem;
+        margin-top: 7rem;
+    }
+}
+ 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-width : 320px)
@@ -42,12 +68,6 @@ and (max-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen
 and (min-width : 321px) {
-/* Styles */
-}
- 
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
 /* Styles */
 }
  

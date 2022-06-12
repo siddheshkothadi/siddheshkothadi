@@ -3,6 +3,7 @@ import styles from "../styles/Text.module.scss";
 import { useTheme } from "next-themes";
 
 enum TextSize {
+    DISPLAY,
     DISPLAY1,
     DISPLAY2,
     DISPLAY3,
@@ -69,11 +70,13 @@ interface TextProps {
     color?: TextColor;
 }
 
-const Text: FC<TextProps> = ({children, onClick, size=TextSize.BUTTON, color}) => {
+const Text: FC<TextProps> = ({children, onClick, size=TextSize.BUTTON, color=TextColor.ON_BACKGROUND}) => {
     const { theme } = useTheme();
 
     const getTextSize = () => {
         switch (size) {
+            case TextSize.DISPLAY:
+                return styles.display;
             case TextSize.DISPLAY1:
                 return styles.display1;
             case TextSize.DISPLAY2:

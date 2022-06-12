@@ -8,11 +8,22 @@
   color: m3.$dark-on-primary-container;
 }
 
-.display1 {
-  font-size: m3.$display1;
+.display {
+  font-size: m3.$display3;
   font-weight: 700;
-  line-height: 3.75rem;
+  line-height: 2.75rem;
   letter-spacing: -.0083333333em;
+}
+
+.title {
+  font-size: m3.$title-small;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: -.0083333333em;
+}
+
+.display1 {
+  font-size: m3.$display3;
 }
 
 .display2 {
@@ -270,4 +281,20 @@
 
 .white {
   color: white;
+}
+
+@media only screen
+and (min-width : 320px) {
+  .display {
+    font-size: m3.$display2;
+    line-height: 3.75rem;
+  }
+}
+
+@media only screen
+and (min-width : 768px) {
+  .display {
+    line-height: 4rem;
+    font-size: m3.$display1;
+  }
 }
