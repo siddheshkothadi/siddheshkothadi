@@ -7,7 +7,12 @@
   border-radius: 50%;
   padding: 0.7rem;
   margin: 0.2rem;
-  transition: border-radius cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color 0.28s ease-in-out;
+  transition: border-radius 0.28s ease-in-out;
+}
+
+.brandIconButton:hover {
+  border-radius: 30%;
 }
 
 .gitHub {
@@ -15,13 +20,17 @@
   background-color: brands.$gitHub;
 }
 
-.brandIconButton:hover {
-  border-radius: 25%;
+.gitHub:hover {
+  background-color: brands.$gitHub-hover;
 }
 
 .linkedin {
-    color: white;
-    background-color: brands.$linkedin;
+  color: white;
+  background-color: brands.$linkedin;
+}
+
+.linkedin:hover {
+  background-color: brands.$linkedin-hover;
 }
 
 .gmail {
@@ -29,7 +38,15 @@
     background-color: brands.$gmail;
 }
 
+.gmail:hover {
+  background-color: brands.$gmail-hover;
+}
+
 .twitter {
     color: white;
     background-color: brands.$twitter;
+}
+
+.twitter:hover {
+  background-color: brands.$twitter-hover;
 }

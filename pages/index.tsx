@@ -9,8 +9,15 @@ import blueCoder from "../public/lottie/blue-coder.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import BrandIconButton, { Brand } from "../components/BrandIconButton";
+import { useTheme } from "next-themes";
 
 const Home: NextPage = () => {
+  const {theme} = useTheme();
+
+  const getBannerStyle = () => {
+    return theme === "light" ? `${styles.banner} ${styles.lightBanner} animateSlide` : `${styles.banner} ${styles.darkBanner} animateSlide`;
+  }
+
   return (
     <div>
       <Head>
@@ -22,17 +29,17 @@ const Home: NextPage = () => {
       <main>
         <div className={styles.mainContainer}>
           <TopAppBar />
-          <div className={`${styles.banner} animateSlide`}>
+          <div className={getBannerStyle()}>
             <div className={styles.bannerContainer}>
               <div className={styles.leftPart}>
                 <Text
                   size={TextSize.DISPLAY}
-                  color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}
+                  color={TextColor.ON_PRIMARY_CONTAINER}
                 >{`Hi, I'm Siddhesh Kothadi`}</Text>
                 <Spacer height={1} />
                 <Text
                   size={TextSize.TITLE}
-                  color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}
+                  color={TextColor.ON_PRIMARY_CONTAINER}
                 >
                   Student • Android and Web Developer
                 </Text>

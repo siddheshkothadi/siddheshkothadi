@@ -14,12 +14,14 @@
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: cover;
-    background-image: m3.$banner17;
-    transition: border-radius cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.banner:hover {
-    border-radius: 2rem;
+.lightBanner {
+    background-image: m3.$banner17;
+}
+
+.darkBanner {
+    background-image: m3.$banner3 !important;
 }
 
 .bannerContainer {
