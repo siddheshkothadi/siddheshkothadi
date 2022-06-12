@@ -18,6 +18,10 @@ const Home: NextPage = () => {
     return theme === "light" ? `${styles.banner} ${styles.lightBanner} animateSlide` : `${styles.banner} ${styles.darkBanner} animateSlide`;
   }
 
+  const getContainerStyle = () => {
+    return theme === "light" ? "lightSurfaceBg mainContainer" : "darkSurfaceBg mainContainer";
+  }
+
   return (
     <div>
       <Head>
@@ -27,7 +31,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className={styles.mainContainer}>
+        <div className={getContainerStyle()}>
           <TopAppBar />
           <div className={getBannerStyle()}>
             <div className={styles.bannerContainer}>
@@ -43,7 +47,7 @@ const Home: NextPage = () => {
                 >
                   Student • Android and Web Developer
                 </Text>
-                <Spacer height={1} />
+                <Spacer height={2} />
                 <div className={styles.brandList}>
                   <BrandIconButton brand={Brand.GITHUB} />
                   <BrandIconButton brand={Brand.LINKEDIN} />
@@ -61,9 +65,11 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+          <footer>
+            <Text size={TextSize.SUBHEAD1}>Made with 💜 by Siddhesh</Text>
+          </footer>
         </div>
       </main>
-      <footer></footer>
     </div>
   );
 };

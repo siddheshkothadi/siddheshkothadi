@@ -1,9 +1,5 @@
 @use "./m3.scss" as m3;
 
-.mainContainer {
-  width: 100%;
-}
-
 .banner {
     display: flex;
     justify-content: space-around;
@@ -21,7 +17,7 @@
 }
 
 .darkBanner {
-    background-color: m3.$ref-secondary-secondary10;
+    background-color: m3.$ref-primary-primary10;
 }
 
 .bannerContainer {

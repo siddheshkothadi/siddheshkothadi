@@ -15,6 +15,15 @@ main {
   justify-content: center;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 0;
+  border-radius: 1.25rem;
+  margin: 1rem 0.15rem;
+}
+
 .mainContainer {
   width: 100%;
 }
