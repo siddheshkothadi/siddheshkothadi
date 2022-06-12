@@ -37,7 +37,7 @@ const Home: NextPage = () => {
           <TopAppBar />
           <div className={styles.banner}>
             <div className={styles.leftPart}>
-              <Text size={TextSize.DISPLAY1} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>Hi, I'm</Text>
+              <Text size={TextSize.DISPLAY1} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>{`Hi, I'm`}</Text>
               <Text size={TextSize.DISPLAY1} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>Siddhesh</Text>
               <Text size={TextSize.DISPLAY1} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>Kothadi</Text>
               <Spacer height={2} />
