@@ -16,8 +16,8 @@
 }
 
 .title {
-  font-size: m3.$title-small;
-  font-weight: 400;
+  font-size: m3.$title-medium;
+  font-weight: 600;
   line-height: 1.75rem;
   letter-spacing: -.0083333333em;
 }
@@ -288,6 +288,9 @@ and (min-width : 320px) {
   .display {
     font-size: m3.$display2;
     line-height: 3.75rem;
+  }
+  .title {
+    font-size: m3.$title-large;
   }
 }
 

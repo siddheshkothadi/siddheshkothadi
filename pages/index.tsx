@@ -6,6 +6,9 @@ import TopAppBar from "../components/TopAppBar";
 import Spacer from "../components/Spacer";
 import Lottie, { LottieOptions } from "lottie-react";
 import blueCoder from "../public/lottie/blue-coder.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import BrandIconButton, { Brand } from "../components/BrandIconButton";
 
 const Home: NextPage = () => {
   return (
@@ -19,35 +22,27 @@ const Home: NextPage = () => {
       <main>
         <div className={styles.mainContainer}>
           <TopAppBar />
-          <div className={styles.banner}>
+          <div className={`${styles.banner} animateSlide`}>
             <div className={styles.bannerContainer}>
               <div className={styles.leftPart}>
                 <Text
                   size={TextSize.DISPLAY}
                   color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}
-                >{`Hi, I'm`}</Text>
+                >{`Hi, I'm Siddhesh Kothadi`}</Text>
+                <Spacer height={1} />
                 <Text
-                  size={TextSize.DISPLAY}
+                  size={TextSize.TITLE}
                   color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}
                 >
-                  Siddhesh
-                </Text>
-                <Text
-                  size={TextSize.DISPLAY}
-                  color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}
-                >
-                  Kothadi
+                  Student • Android and Web Developer
                 </Text>
                 <Spacer height={1} />
-
-                <Text
-                  size={TextSize.HEADLINE4}
-                  color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}
-                >
-                  A budding software engineer interested in solving real-world
-                  problems using software engineering principles. Interested in
-                  web and android development.
-                </Text>
+                <div className={styles.brandList}>
+                  <BrandIconButton brand={Brand.GITHUB} />
+                  <BrandIconButton brand={Brand.LINKEDIN} />
+                  <BrandIconButton brand={Brand.TWITTER} />
+                  <BrandIconButton brand={Brand.GMAIL} />
+                </div>
               </div>
               <div className={styles.rightPart}>
                 <Lottie

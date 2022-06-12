@@ -1,0 +1,35 @@
+@use "./brands.scss" as brands;
+
+.brandIconButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.7rem;
+  margin: 0.2rem;
+  transition: border-radius cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.gitHub {
+  color: white;
+  background-color: brands.$gitHub;
+}
+
+.brandIconButton:hover {
+  border-radius: 25%;
+}
+
+.linkedin {
+    color: white;
+    background-color: brands.$linkedin;
+}
+
+.gmail {
+    color: white;
+    background-color: brands.$gmail;
+}
+
+.twitter {
+    color: white;
+    background-color: brands.$twitter;
+}

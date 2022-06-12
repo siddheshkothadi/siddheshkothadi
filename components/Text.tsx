@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 
 enum TextSize {
     DISPLAY,
+    TITLE,
     DISPLAY1,
     DISPLAY2,
     DISPLAY3,
@@ -77,6 +78,8 @@ const Text: FC<TextProps> = ({children, onClick, size=TextSize.BUTTON, color=Tex
         switch (size) {
             case TextSize.DISPLAY:
                 return styles.display;
+            case TextSize.TITLE:
+                return styles.title;
             case TextSize.DISPLAY1:
                 return styles.display1;
             case TextSize.DISPLAY2:
