@@ -45,7 +45,7 @@ const Home: NextPage = () => {
               <Text size={TextSize.HEADLINE4} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>A budding software engineer interested in solving real-world problems using software engineering principles. Interested in web and android development.</Text>
             </div>
             <div className={styles.rightPart}>
-              {/* <Lottie animationData={blueCoder} style={{ height: "400px" }} loop autoPlay /> */}
+              <Lottie animationData={blueCoder} style={{ height: "400px" }} loop autoPlay />
             </div>
           </div>
 
