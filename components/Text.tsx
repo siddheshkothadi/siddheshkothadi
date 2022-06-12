@@ -43,6 +43,12 @@ enum TextColor {
     ON_PRIMARY,
     ON_SECONDARY,
     ON_TERTIARY,
+    LIGHT_ON_PRIMARY_CONTAINER,
+    LIGHT_ON_SECONDARY_CONTAINER,
+    LIGHT_ON_TERTIARY_CONTAINER,
+    DARK_ON_PRIMARY_CONTAINER,
+    DARK_ON_SECONDARY_CONTAINER,
+    DARK_ON_TERTIARY_CONTAINER,
     ON_PRIMARY_CONTAINER,
     ON_SECONDARY_CONTAINER,
     ON_TERTIARY_CONTAINER,
@@ -149,6 +155,18 @@ const Text: FC<TextProps> = ({children, onClick, size=TextSize.BUTTON, color}) =
                 return theme === "light" ? styles.onSecondary : styles.onSecondaryDark;
             case TextColor.ON_TERTIARY:
                 return theme === "light" ? styles.onTertiary : styles.onTertiaryDark;
+            case TextColor.LIGHT_ON_PRIMARY_CONTAINER:
+                return styles.onPrimaryContainer;
+            case TextColor.LIGHT_ON_SECONDARY_CONTAINER:
+                return styles.onSecondaryContainer;
+            case TextColor.LIGHT_ON_TERTIARY_CONTAINER:
+                return styles.onTertiaryContainer;
+            case TextColor.DARK_ON_PRIMARY_CONTAINER:
+                return styles.onPrimaryContainerDark;
+            case TextColor.DARK_ON_SECONDARY_CONTAINER:
+                return styles.onSecondaryContainerDark;
+            case TextColor.DARK_ON_TERTIARY_CONTAINER:
+                return styles.onTertiaryContainerDark;
             case TextColor.ON_PRIMARY_CONTAINER:
                 return theme === "light" ? styles.onPrimaryContainer : styles.onPrimaryContainerDark;
             case TextColor.ON_SECONDARY_CONTAINER:

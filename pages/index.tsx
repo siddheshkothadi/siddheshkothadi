@@ -37,15 +37,15 @@ const Home: NextPage = () => {
           <TopAppBar />
           <div className={styles.banner}>
             <div className={styles.leftPart}>
-              <Text size={TextSize.DISPLAY1} color={TextColor.ON_PRIMARY_CONTAINER}>Hi, I'm</Text>
-              <Text size={TextSize.DISPLAY1} color={TextColor.ON_PRIMARY_CONTAINER}>Siddhesh</Text>
-              <Text size={TextSize.DISPLAY1} color={TextColor.ON_PRIMARY_CONTAINER}>Kothadi</Text>
+              <Text size={TextSize.DISPLAY1} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>Hi, I'm</Text>
+              <Text size={TextSize.DISPLAY1} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>Siddhesh</Text>
+              <Text size={TextSize.DISPLAY1} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>Kothadi</Text>
               <Spacer height={2} />
 
-              <Text size={TextSize.HEADLINE4} color={TextColor.ON_PRIMARY_CONTAINER}>A budding software engineer interested in solving real-world problems using software engineering principles. Interested in web and android development.</Text>
+              <Text size={TextSize.HEADLINE4} color={TextColor.LIGHT_ON_PRIMARY_CONTAINER}>A budding software engineer interested in solving real-world problems using software engineering principles. Interested in web and android development.</Text>
             </div>
             <div className={styles.rightPart}>
-              <Lottie animationData={blueCoder} style={{ height: "400px" }} />
+              {/* <Lottie animationData={blueCoder} style={{ height: "400px" }} loop autoPlay /> */}
             </div>
           </div>
 
