@@ -11,19 +11,9 @@ import TopAppBar from "../components/TopAppBar";
 import ThemeToggleButton from "../components/ThemeToggleButton";
 import Spacer from "../components/Spacer";
 import Lottie, { LottieOptions } from "lottie-react";
-import coderAnimation from "../public/lottie/coder.json";
 import blueCoder from "../public/lottie/blue-coder.json";
 
 const Home: NextPage = () => {
-  const options: LottieOptions = {
-    animationData: coderAnimation,
-    loop: true,
-    autoplay: true,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  }
-
   return (
     <div>
       <Head>
