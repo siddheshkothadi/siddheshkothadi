@@ -15,10 +15,11 @@
 - 📚 Learning data structures, algorithms, computer science fundamentals and application development
 - ⚡ I enjoy working with React, Jetpack Compose, Kotlin & Javascript
 - 🌱 Interested in scripting and automation
-- 🤔 Looking for help with Multi-Module apps in Android
 - 😄 Pronouns: he/him
 - 🎧 Synthwave, Techno, LoFi
 - ✉️ <a href="https://twitter.com/siddhesh_kt">Twitter</a> or mail me at <a href="mailto:siddhesh.kt@gmail.com">siddhesh.kt@gmail.com</a>
+
+<!-- - 🤔 Looking for help with Multi-Module apps in Android -->
 
 ## 👨‍💻 &nbsp;GitHub Stats
 
