@@ -23,7 +23,7 @@
 
 ## 👨‍💻 &nbsp;GitHub Stats
 
-<img alt="Siddhesh's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=siddheshkothadi&bg_color=141321&color=A9FEF7&line=FD428D&point=F7D747&hide_border=true" />
+<!-- <img alt="Siddhesh's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=siddheshkothadi&bg_color=141321&color=A9FEF7&line=FD428D&point=F7D747&hide_border=true" /> -->
 
 <div align="center">
   
