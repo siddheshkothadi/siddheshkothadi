@@ -60,7 +60,7 @@ export default function Home() {
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://siddheshkothadi.vercel.app/" />
+        <meta property="og:url" content="https://siddheshkothadi.me/" />
         <meta property="og:title" content="Siddhesh Kothadi" key="title" />
         <meta
           property="og:description"
@@ -70,17 +70,17 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://siddheshkothadi.vercel.app/preview-screenshot.png"
+          content="https://siddheshkothadi.me/preview-screenshot.png"
         ></meta>
 
         {/* Twitter */}
         <meta
           property="twitter:card"
-          content="https://siddheshkothadi.vercel.app/preview-screenshot.png"
+          content="https://siddheshkothadi.me/preview-screenshot.png"
         />
         <meta
           property="twitter:url"
-          content="https://siddheshkothadi.vercel.app/"
+          content="https://siddheshkothadi.me/"
         />
         <meta property="twitter:title" content="Siddhesh Kothadi" />
         <meta
@@ -89,7 +89,7 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://siddheshkothadi.vercel.app/preview-screenshot.png"
+          content="https://siddheshkothadi.me/preview-screenshot.png"
         ></meta>
       </Head>
 
