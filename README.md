@@ -11,7 +11,7 @@
 
 <img alt="Multiple Monitors" src="https://user-images.githubusercontent.com/55179845/154410218-04ca538f-942c-4240-b36b-ec6e3cf81396.gif" width="450" align="right"/>
 
-- 🎓 Studying Information Technology Engineering at VIIT, Pune
+- 👨‍💻 Software Engineer at UBS
 - 📚 Learning data structures, algorithms, computer science fundamentals and application development
 - ⚡ I enjoy working with React, Jetpack Compose, Kotlin & Javascript
 - 🌱 Interested in scripting and automation
